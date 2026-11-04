@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A question or an idea
+    url: https://github.com/walkthebeat/feedback/discussions
+    about: Ask, or tell us what you wish beat did.

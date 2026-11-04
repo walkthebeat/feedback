@@ -1,0 +1,23 @@
+name: Something is wrong
+description: Something broke, confused you, or your agent could not see what it needed.
+body:
+  - type: markdown
+    attributes:
+      value: "**This is public.** Please leave out hostnames, configuration, answers from your hosts, transcripts and secrets."
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you got.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: "`beat --version` and, if it matters, `beat-sensor --version`."
+  - type: input
+    id: survey
+    attributes:
+      label: Survey id
+      description: If a survey shows the problem. It lets us find it on our side.
